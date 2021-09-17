@@ -1,0 +1,28 @@
+@media screen and (max-width: 1065px){
+	.typing{margin-left: 200px;}
+}
+
+
+@media screen and (max-width: 963px){
+	.introp{text-align: center; align-content: center; margin: 50px auto 10px auto;}
+	.typing{text-align: center; margin: 50px auto 50px auto; }
+	.selector{align-content: center; margin: 50px auto 10px auto;}
+	footer{margin: 10px 10px 10px 10px;}
+}
+
+@media screen and (max-width: 625px){
+	.introp{margin: 50px 10px 10px 10px;}
+	.selector{margin: 50px 10px 10px 10px;}
+}
+
+@media screen and (max-width: 450px){
+	.typing{margin: 50px 0 50px 10px;}
+}
+
+@media screen and (max-height: 555px){
+	footer{position: relative;}
+}
+
+@media screen and (max-width: 650px){
+	footer{position: relative;}
+}

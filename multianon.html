@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/multianon.css">
+	<link rel="stylesheet" href="./style/multianonMedia.css">
+	<title>Solo Mail</title>
+</head>
+<body>
+
+	<div class="top">
+		<h1>Solo Mail Service</h1>
+	</div>
+
+	<div class="form">
+		<form method="post" action="anon2">
+			<input type="email" name="to" placeholder="To" class="all" required> <br>
+			<input type="email" name="cc" placeholder="Cc" class="all"> <br>
+			<input  type="text" name="sub" placeholder="Subject" class="all"> <br>
+			<textarea name="msg" placeholder="Compose Mail" class="all" rows="15" cols="45" required></textarea><br>
+			<p class="label">No. of times to send</p><br>
+			<input type="range" name="value" value="1" max="10" min="1" id="value"><p id="vp"></p>
+			<input type="submit" name="submit" value="Send" class="send">
+		</form>
+	</div>
+
+	<footer>
+		<p class="warn">(Note: Any criminal issues, problem or damage caused by the mail sent form here is not responsible by the author and developers.) <br>{Use at your own risk!!}</p>
+		<p class="copyr">[Copyright &copy; solo mail service 2021]</p>
+	</footer>
+
+<script type="text/javascript" src="./script/multianon.js"></script>
+</body>
+</html>
