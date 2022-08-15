@@ -44,6 +44,4 @@ playAnim();
 const copyright = document.querySelector(".copyright");
 
 const date = new Date();
-console.log(date.getFullYear());
-
 copyright.innerHTML = `[  &copy; Copyright, solo mail service ${date.getFullYear()} ]`;
