@@ -4,7 +4,8 @@
   "description": "soloMailer",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "nodemon index.js"
   },
   "author": "solo",
   "license": "MIT",
@@ -14,5 +15,7 @@
     "nodemailer": "^6.6.3",
     "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }

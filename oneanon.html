@@ -13,7 +13,9 @@
     <nav id="nav">
       <div class="nav__container">
         <div class="nav__logo">
-          <img src="./img/logo.svg" alt="Logo" class="logo" />
+          <a href="/index.html">
+            <img src="./img/logo.svg" alt="Logo" class="logo" />
+          </a>
         </div>
         <div class="nav__header">
           <h1 class="header">Solo Mail Service</h1>
@@ -26,28 +28,28 @@
     </div>
 
     <div class="form">
-      <form method="post" action="anon">
-        <input
-          type="email"
-          name="to"
-          placeholder="To"
-          class="all"
-          id="to"
-          required
-        />
-        <br />
-        <input type="email" name="cc" placeholder="Cc" class="all" /> <br />
-        <input type="text" name="sub" placeholder="Subject" class="all" />
-        <br />
+      <form method="post" action="anon" class="form__action">
+        <div class="input">
+          <span class="input__span">To:</span>
+          <input type="email" name="to" class="all" id="to" required />
+        </div>
+        <div class="input">
+          <span class="input__span">Cc:</span>
+          <input type="email" name="cc" class="all" />
+        </div>
+
+        <div class="input">
+          <span class="input__span">Subject:</span>
+          <input type="text" name="sub" class="all" />
+        </div>
         <textarea
           name="msg"
           placeholder="Compose Mail"
-          class="all"
+          class="all textarea"
           rows="15"
           cols="45"
           required
         ></textarea>
-        <br />
         <input type="submit" name="submit" value="Send" class="send" />
       </form>
     </div>

@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style/multianon.css">
-	<link rel="stylesheet" href="./style/multianonMedia.css">
-	<title>Solo Mail</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An anonymous mailing service" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <title>Multiple Time Mail | Solo Mail</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style/multianon.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <a href="/index.html">
+            <img src="./img/logo.svg" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <div class="nav__header">
+          <h1 class="header">Solo Mail Service</h1>
+        </div>
+      </div>
+    </nav>
 
-	<div class="top">
-		<h1>Solo Mail Service</h1>
-	</div>
+    <div class="img">
+      <img src="./img/Mask group.png" alt="Mask Group" class="img__group" />
+    </div>
 
-	<div class="form">
-		<form method="post" action="anon2">
-			<input type="email" name="to" placeholder="To" class="all" required> <br>
-			<input type="email" name="cc" placeholder="Cc" class="all"> <br>
-			<input  type="text" name="sub" placeholder="Subject" class="all"> <br>
-			<textarea name="msg" placeholder="Compose Mail" class="all" rows="15" cols="45" required></textarea><br>
-			<p class="label">No. of times to send</p><br>
-			<input type="range" name="value" value="1" max="10" min="1" id="value"><p id="vp"></p>
-			<input type="submit" name="submit" value="Send" class="send">
-		</form>
-	</div>
+    <div class="form">
+      <form method="post" action="anon2" class="form__action">
+        <div class="input">
+          <span class="input__span">To:</span>
+          <input type="email" name="to" class="all" id="to" required />
+        </div>
+        <div class="input">
+          <span class="input__span">Cc:</span>
+          <input type="email" name="cc" class="all" />
+        </div>
 
-	<footer>
-		<p class="warn">(Note: Any criminal issues, problem or damage caused by the mail sent form here is not responsible by the author and developers.) <br>{Use at your own risk!!}</p>
-		<p class="copyr">[Copyright &copy; solo mail service 2021]</p>
-	</footer>
+        <div class="input">
+          <span class="input__span">Subject:</span>
+          <input type="text" name="sub" class="all" />
+        </div>
+        <textarea
+          name="msg"
+          placeholder="Compose Mail"
+          class="all"
+          rows="15"
+          cols="45"
+          required
+        ></textarea>
 
-<script type="text/javascript" src="./script/multianon.js"></script>
-</body>
+        <div class="number_of_times">
+          <p class="label">No. of times to send</p>
+          <div id="range">
+            <input
+              type="range"
+              name="value"
+              value="1"
+              max="10"
+              min="1"
+              id="value"
+            />
+            <p id="range__number"></p>
+          </div>
+        </div>
+        <input type="submit" name="submit" value="Send" class="send" />
+      </form>
+    </div>
+
+    <div class="foot__img">
+      <img src="./img/Group 3.png" alt="Foot Image" class="foot__image" />
+    </div>
+
+    <footer id="footer">
+      <p class="warning__para">
+        Note: Any criminal issues, problem or damage caused by the mail sent
+        form here is not responsible by the author and developers. <br />
+        { Use at your own risk!!! }
+      </p>
+      <p class="copyright"></p>
+    </footer>
+
+    <script type="text/javascript" src="./script/multianon.js"></script>
+    <script src="./script/mail.js" type="module"></script>
+  </body>
 </html>

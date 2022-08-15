@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
@@ -101,6 +99,11 @@ body {
   background: #00fff0;
   border: none;
   border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+#main .main__container .selector .selector__btn:hover {
+  transform: translateX(0rem) translateY(-0.3rem);
+  box-shadow: 0rem 0.3rem 0.8rem #000000;
 }
 #main .main__container .selector .selector__btn__link {
   display: inline-block;
@@ -140,6 +143,28 @@ body {
   font-weight: 500;
   font-style: italic;
   font-size: clamp(1rem, 1.2vw, 4rem);
+}
+
+.message {
+  text-align: center;
+  margin: 8rem 0;
+}
+.message .message__header {
+  font-size: clamp(1.5rem, 2.5vw, 6rem);
+  color: #fff;
+}
+
+._404 {
+  text-align: center;
+  margin: 8rem 0;
+}
+._404 ._404__header {
+  font-size: clamp(3rem, 15vw, 15rem);
+  color: #fff;
+}
+._404 ._404__sub-header {
+  font-size: clamp(3rem, 5vw, 15rem);
+  color: #fff;
 }
 
 @keyframes type {
