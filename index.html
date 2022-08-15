@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style/index.css">
-	<link rel="stylesheet" href="./style/indexMedia.css">
-	<title>Solo Mail</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An anonymous mailing service" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <title>Solo Mail | An Anonymous Mailing Service</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/indexMedia.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img src="./img/logo.svg" alt="Logo" class="logo" />
+        </div>
+        <div class="nav__header">
+          <h1 class="header">Solo Mail Service</h1>
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="main__container">
+        <div class="intro">
+          <p class="intro__para">
+            Solo mail service is the place where you can send e-mails to people
+            from anonymous account. It supports gmail, outlook, yahoo and all
+            other type of accounts.
+          </p>
+        </div>
+        <div class="typing__animation">
+          <p class="typing">
+            We are
+            <span class="type__effect"
+              ><span class="type"></span><span class="line">|</span>
+            </span>
+          </p>
+        </div>
 
-	<div class="top">
-		<h1>Solo Mail Service</h1>
-	</div>
+        <div class="selector">
+          <button class="selector__btn">
+            <a href="oneanon.html" class="selector__btn__link"
+              >One Time Mail
+            </a>
+          </button>
+          <button class="selector__btn">
+            <a href="multianon.html" class="selector__btn__link">
+              Multiple mail
+            </a>
+          </button>
+        </div>
+      </div>
+    </main>
 
-	<div class="intro">
-		<p class="introp">Solo mail service is the place where you can send e-mails to people from anonymous account. It supports gmail, outlook, yahoo and all others type of accounts.</p>
-		<p class="typing">We are <span class="type"></span><span class="line">|</span></p>
-	</div>
-	
-	<div class="selector">
-		<p>Select the options bellow</p>
-		<a href="oneanon.html"><button>One mail at a time</button></a>
-		<a href="multianon.html"><button>Multiple mail at a time</button></a>
-	</div>
+    <footer id="footer">
+      <p class="warning__para">
+        Note: Any criminal issues, problem or damage caused by the mail sent
+        form here is not responsible by the author and developers. <br />
+        { Use at your own risk!!! }
+      </p>
+      <p class="copyright"></p>
+    </footer>
 
-	<footer>
-		<p class="warn">(Note: Any criminal issues, problem or damage caused by the mail sent form here is not responsible by the author and developers.) <br>{Use at your own risk!!}</p>
-		<p class="copyr">[Copyright &copy; solo mail service 2021]</p>
-	</footer>
-
-<script type="text/javascript" src="./script/index.js"></script>	
-</body>
+    <script type="text/javascript" src="./script/index.js"></script>
+  </body>
 </html>
