@@ -1,0 +1,19 @@
+@media screen and (max-width: 963px){
+	footer{margin: 10px 10px 10px 10px;}
+}
+
+@media screen and (max-height: 700px){
+	footer{top: 100px;}
+}
+
+@media screen and (max-height: 1000px){
+	footer{top: 200px;}
+}
+
+@media screen and (max-width: 580px){
+	.form{margin: 50px 10px auto 10px;}
+}
+
+@media screen and (max-width: 360px){
+	.form .send{margin: 10px 0 10px 10px;}
+}

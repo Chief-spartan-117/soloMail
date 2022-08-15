@@ -11,7 +11,7 @@ const bparser = parser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, "/")));
 
 app.get("/", (req, res) => {
-  res.send("hi");
+  res.redirect("/views/index.html");
 });
 
 app.listen(port, () => {
@@ -41,12 +41,12 @@ app.post("/anon", bparser, (req, res) => {
   service.sendMail(options, (error) => {
     if (error) {
       console.log(error);
-      res.redirect("/404.html");
+      res.redirect("/views/404.html");
     } else {
       console.log(
         `Email sent to ${options.to} and ${options.cc}..... ${1} times`
       );
-      res.redirect("/sent.html");
+      res.redirect("/views/sent.html");
     }
   });
 });
