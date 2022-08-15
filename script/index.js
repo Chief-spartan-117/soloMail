@@ -38,9 +38,6 @@ function playAnim() {
 }
 
 playAnim();
-
-///////////////////////////////////////////////////////////////////
-// Copyright
 const copyright = document.querySelector(".copyright");
 
 const date = new Date();

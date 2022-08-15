@@ -1,5 +1,5 @@
 {
-  "name": "soloMail",
+  "name": "solo-mail",
   "version": "1.0.0",
   "description": "soloMailer",
   "main": "index.js",
@@ -14,6 +14,5 @@
     "nodemailer": "^6.6.3",
     "path": "^0.12.7"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
